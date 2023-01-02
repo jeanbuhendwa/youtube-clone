@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+i {
+    color: black;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 20px;
+    height: 60px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.bar-nav {
+    transition: all 0.3s ease-in-out;
+}
+.navigation-bar .logo img {
+    height: 45px;
+    width: 120px;
+}
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-section #input-nav {
+    width: 400px;
+    padding: 8px 15px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 15px 0 0 15px;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: 0;
+}
+.search-section button {
+    margin-left: 0;
+    width: 50px;
+    padding: 9px 15px;
+    font-size: 1rem;
+    background: rgb(209, 209, 209);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+.search-section .voice-search {
+    background: rgb(240, 240, 240);
+    padding: 10px 12px;
+    border-radius: 100%;
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile-section .profile-child {
+    font-size: 1.2rem;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.bar-nav:hover,
+.profile-section .profile-child:hover {
+    background: rgb(240, 240, 240);
+    padding: 8px 10px;
+    border-radius: 100%;
+}
+
+.profile-img #profile-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
