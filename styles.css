@@ -295,12 +295,17 @@ main video and the side bar */
     font-weight: 300;
 }
 .side-video .buttons-more {
-    background: #EAEDED;
     grid-area: buttons-more;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .side-video .buttons-more button{
-    padding: 10px 15px;
+    border-radius: 18px;
+    border: none;
+    padding: 8px 13px;
+    background: rgb(217, 217, 217);
+    font-size: 0.8rem;
+    color: black;
+    cursor: pointer;
 }
