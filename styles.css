@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 i {
     color: black;
@@ -86,12 +88,12 @@ main video and the side bar */
     display: grid;
     grid-template-areas: "main-video side-video";
     height: 100vh;
-    width: 100%;
+    /* width: 100%;  */
     grid-template-columns: auto 30%;
     grid-template-rows: 1fr;
+    margin: 0 50px;
 }
 .main-video {
-    background: red;
     grid-area: main-video;
     display: grid;
     grid-template-areas: 
@@ -103,7 +105,6 @@ main video and the side bar */
 }
 .main-video .video-playing {
     grid-area: video-playing;
-    background: gray;
 }
 .video-playing iframe {
     width: 100%;
@@ -111,7 +112,6 @@ main video and the side bar */
 }
 .main-video .video-info {
     grid-area: video-info;
-    background: rgb(234, 234, 234);
     padding: 15px 0px;
     display: flex;
     flex-direction: column;
@@ -122,7 +122,77 @@ main video and the side bar */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 150px;
 }
+.video-info .video-title h1 {
+    font-size: 1.6rem;
+}
+.video-info .more-info .artiste {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.video-info .more-info .artiste img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.video-info .more-info .art-name h2{
+    font-size: 1rem;
+}
+.video-info .more-info .art-name p{
+    font-size: 0.8rem;
+}
+.video-info .more-info .artiste button{
+    width: 150px;
+    height: 30px;
+    border-radius: 18px;
+    border: none;
+    padding: 8px 13px;
+    background: rgb(217, 217, 217);
+    font-size: 0.8rem;
+    color: black;
+    cursor: pointer;
+}
+.more-info .share-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.more-info .share-links .btn-likes button{
+    padding: 8px 15px;
+    background: rgb(217, 217, 217);
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.more-info .share-links .btn-likes #like{
+    padding-left: 20px;
+    margin-right: -10px;
+    border-radius: 15px 0 0 15px;
+}
+.more-info .share-links .btn-likes #dislike{
+    padding-left: 20px;
+    border-radius: 0 15px 15px 0;
+}
+.more-info .share-links #share{
+    padding: 8px 15px;
+    background: rgb(217, 217, 217);
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 15px;
+}
+.more-info .share-links #more{
+    padding: 8px 15px;
+    background: rgb(217, 217, 217);
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 15px;
+}
+
+/* This styles the side bar playlist video */
 .side-video {
     background: yellow;
     grid-area: side-video;
