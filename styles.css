@@ -100,7 +100,7 @@ main video and the side bar */
     "video-playing"
     "video-info";
     grid-template-columns: 1fr;
-    grid-template-rows: auto 25%;
+    grid-template-rows: auto 30%;
     padding: 20px;
 }
 .main-video .video-playing {
@@ -191,7 +191,24 @@ main video and the side bar */
     font-size: 0.8rem;
     border-radius: 15px;
 }
-
+.video-description {
+    background: rgb(238, 238, 238);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.video-description:hover {
+    background: rgb(217, 217, 217);
+    cursor: pointer;
+}
+.video-description h3{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.video-description p{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
 /* This styles the side bar playlist video */
 .side-video {
     background: yellow;
