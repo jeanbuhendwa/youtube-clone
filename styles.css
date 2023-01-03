@@ -91,7 +91,7 @@ main video and the side bar */
     /* width: 100%;  */
     grid-template-columns: auto 30%;
     grid-template-rows: 1fr;
-    margin: 0 50px;
+    margin: 10px 50px;
 }
 .main-video {
     grid-area: main-video;
@@ -211,7 +211,6 @@ main video and the side bar */
 }
 /* This styles the side bar playlist video */
 .side-video {
-    background: yellow;
     grid-area: side-video;
     display: grid;
     grid-template-areas: 
@@ -219,18 +218,89 @@ main video and the side bar */
         "playlist"
         "buttons-more";
     grid-template-columns: auto;
-    grid-template-rows: 15% auto 10%;
+    grid-template-rows: 12% 70% 10%;
     padding: 20px;
 }
 .side-video .playlist-title {
-    background: #AEB6BF;
+    background: rgb(238, 238, 238);
     grid-area: playlist-title;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 15px 15px 0 0;
 }
+.side-video .playlist-title .my-playlist h2{
+    font-size: 1.2rem;
+}
+.side-video .playlist-title .my-playlist p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 8px;
+}
+.side-video .playlist-title button{
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
 .side-video .playlist {
-    background: #525253;
     grid-area: playlist;
+}
+.side-video .playlist .music{
+    display: grid;
+    grid-template-areas: "video music-title";
+    grid-template-columns: 35% auto;
+    grid-template-rows: 60px;
+    padding: 8px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.side-video .playlist .music:hover{
+    background: rgb(238, 238, 238);
+    cursor: pointer;
+}
+.side-video .playlist .music .video {
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.side-video .playlist .music .video1 {
+    background-image: url(img/dadju.jpeg);
+}
+.side-video .playlist .music .video2 {
+    background-image: url(img/fally.jpeg);
+}
+.side-video .playlist .music .video3 {
+    background-image: url(img/diamond.jpeg);
+}
+.side-video .playlist .music .video4 {
+    background-image: url(img/gims.jpeg);
+}
+.side-video .playlist .music .video5 {
+    background-image: url(img/sheebah.jpeg);
+}
+.side-video .playlist .music .video6 {
+    background-image: url(img/Wizkid.jpeg);
+}
+.side-video .playlist .music .music-title {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+}
+.side-video .playlist .music .music-title h2 {
+    font-size: 0.8rem;
+}
+.side-video .playlist .music .music-title p {
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 .side-video .buttons-more {
     background: #EAEDED;
     grid-area: buttons-more;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.side-video .buttons-more button{
+    padding: 10px 15px;
 }
