@@ -6,6 +6,7 @@ i {
     color: black;
 }
 
+/* This section styles the navigation bar */
 .navigation-bar {
     display: flex;
     align-items: center;
@@ -41,7 +42,7 @@ i {
     margin-right: 0;
 }
 .search-section button {
-    margin-left: 0;
+    margin-left: -10px;
     width: 50px;
     padding: 9px 15px;
     font-size: 1rem;
@@ -76,4 +77,73 @@ i {
     height: 35px;
     width: 35px;
     border-radius: 100%;
+}
+
+/* This Section styles the main body
+main video and the side bar */
+
+.main-container {
+    display: grid;
+    grid-template-areas: "main-video side-video";
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 1fr;
+}
+.main-video {
+    background: red;
+    grid-area: main-video;
+    display: grid;
+    grid-template-areas: 
+    "video-playing"
+    "video-info";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 25%;
+    padding: 20px;
+}
+.main-video .video-playing {
+    grid-area: video-playing;
+    background: gray;
+}
+.video-playing iframe {
+    width: 100%;
+    height: 100%;
+}
+.main-video .video-info {
+    grid-area: video-info;
+    background: rgb(234, 234, 234);
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.video-info .more-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.side-video {
+    background: yellow;
+    grid-area: side-video;
+    display: grid;
+    grid-template-areas: 
+        "playlist-title"
+        "playlist"
+        "buttons-more";
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto 10%;
+    padding: 20px;
+}
+.side-video .playlist-title {
+    background: #AEB6BF;
+    grid-area: playlist-title;
+}
+.side-video .playlist {
+    background: #525253;
+    grid-area: playlist;
+}
+.side-video .buttons-more {
+    background: #EAEDED;
+    grid-area: buttons-more;
 }
