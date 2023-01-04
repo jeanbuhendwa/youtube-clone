@@ -309,3 +309,18 @@ main video and the side bar */
     color: black;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 820px){
+    .navigation-bar {
+        justify-content: space-between;
+        gap: 10px;
+        height: 80px;
+    }
+    .search-section #input-nav {
+        width: 300px;
+        padding: 8px 12px;
+    }
+    .search-section .voice-search {
+        display: none;
+    }
+}
