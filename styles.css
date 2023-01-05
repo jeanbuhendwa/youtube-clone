@@ -323,4 +323,13 @@ main video and the side bar */
     .search-section .voice-search {
         display: none;
     }
+    .main-container {
+        display: grid;
+        grid-template-areas: "main-video" "side-video";
+        height: 100%;
+        /* width: 100%;  */
+        grid-template-columns: auto 50%;
+        grid-template-rows: 1fr;
+        margin: 10px 50px;
+    }
 }
