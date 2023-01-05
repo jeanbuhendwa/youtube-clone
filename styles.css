@@ -326,10 +326,45 @@ main video and the side bar */
     .main-container {
         display: grid;
         grid-template-areas: "main-video" "side-video";
-        height: 100%;
+        height: 100vh;
         /* width: 100%;  */
-        grid-template-columns: auto 50%;
-        grid-template-rows: 1fr;
-        margin: 10px 50px;
+        grid-template-columns: auto;
+        grid-template-rows: 60% 40%;
+        margin: 20px;
+    }
+    .main-video {
+        grid-area: main-video;
+        display: grid;
+        grid-template-areas: 
+        "video-playing"
+        "video-info";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 30%;
+        padding: 0px;
+    }
+    .main-video .video-info {
+        grid-area: video-info;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .video-info .more-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 120px;
+    }
+    .side-video {
+        grid-area: side-video;
+        display: grid;
+        grid-template-areas: 
+            "playlist-title"
+            "playlist"
+            "buttons-more";
+        grid-template-columns: auto;
+        grid-template-rows:15% auto 10%;
+        padding: 10px;
     }
 }
