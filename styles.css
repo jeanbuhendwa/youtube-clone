@@ -364,7 +364,37 @@ main video and the side bar */
             "playlist"
             "buttons-more";
         grid-template-columns: auto;
-        grid-template-rows:15% auto 10%;
-        padding: 10px;
+        grid-template-rows:20% auto 15%;
+        padding: 0px;
+    }
+    .side-video .playlist-title {
+        padding: 20px 30px;
+    }
+    .side-video .playlist-title .my-playlist h2{
+        font-size: 1.4rem;
+    }
+    .side-video .playlist-title .my-playlist p{
+        font-size: 1rem;
+    }
+    .side-video .playlist-title button{
+        font-size: 1.8rem;
+    }
+    .side-video .playlist .music{
+        grid-template-columns: 35% auto;
+        grid-template-rows: 100px;
+        padding: 10px 30px;
+    }
+    .side-video .playlist .music .music-title h2 {
+        font-size: 1.4rem;
+    }
+    .side-video .playlist .music .music-title p {
+        font-size: 1rem;
+        margin-top: 5px;
+        font-weight: 300;
+    }
+    .side-video .buttons-more {
+        justify-content: flex-end;
+        gap: 30px;
+        align-items: center;
     }
 }
