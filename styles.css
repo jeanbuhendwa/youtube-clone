@@ -400,7 +400,9 @@ main video and the side bar */
     }
 }
 
-@media only screen and (max-width : 767px){
+@media only screen and (max-width : 620px){
+
+    /* The navigation bar codes below */
     .navigation-bar {
         display: flex;
         align-items: center;
@@ -421,6 +423,124 @@ main video and the side bar */
     }
     .search-section .voice-search {
         display: none;
+    }
+    /* The main video playing codes below */
+    .main-container {
+        display: grid;
+        grid-template-areas: "main-video" "side-video";
+        height: 100vh;
+        /* width: 100%;  */
+        grid-template-columns: auto;
+        grid-template-rows: 60% 40%;
+        margin: 0px;
+    }
+    .main-video {
+        grid-area: main-video;
+        display: grid;
+        grid-template-areas: 
+        "video-playing"
+        "video-info";
+        grid-template-columns: auto;
+        grid-template-rows: auto 30%;
+        padding: 12px;
+    }
+    .video-playing iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .main-video .video-info {
+        grid-area: video-info;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .video-info .more-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:5px;
+    }
+    .video-info .video-title h1 {
+        font-size: 1rem;
+    }
+    .video-info .more-info .artiste {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .video-info .more-info .artiste img{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+    .video-info .more-info .art-name h2{
+        font-size: 0.6rem;
+    }
+    .video-info .more-info .art-name p{
+        font-size: 0.4rem;
+    }
+    .video-info .more-info .artiste button{
+        width: 120px;
+        height: 25px;
+        border-radius: 18px;
+        border: none;
+        padding: 5px;
+        background: rgb(217, 217, 217);
+        font-size: 0.6rem;
+        color: black;
+        cursor: pointer;
+    }
+    .more-info .share-links {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .more-info .share-links .btn-likes button{
+        padding: 8px;
+        background: rgb(217, 217, 217);
+        border: none;
+        cursor: pointer;
+        font-size: 0.5rem;
+    }
+    .more-info .share-links .btn-likes #like{
+        padding-left: 10px;
+        margin-right: -10px;
+        border-radius: 15px 0 0 15px;
+    }
+    .more-info .share-links .btn-likes #dislike{
+        padding-left: 10px;
+        border-radius: 0 15px 15px 0;
+    }
+    .more-info .share-links #share{
+        padding: 8px 15px;
+        background: rgb(217, 217, 217);
+        border: none;
+        cursor: pointer;
+        font-size: 0.6rem;
+        border-radius: 15px;
+    }
+    .more-info .share-links #more{
+        display: none;
+    }
+    .video-description {
+        background: rgb(238, 238, 238);
+        padding: 5px 8px;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+    }
+    .video-description:hover {
+        background: rgb(217, 217, 217);
+        cursor: pointer;
+    }
+    .video-description h3{
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    .video-description p{
+        font-size: 0.7rem;
+        font-weight: 300;
     }
 }
 
