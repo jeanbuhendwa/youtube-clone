@@ -400,7 +400,29 @@ main video and the side bar */
     }
 }
 
-
+@media only screen and (max-width : 767px){
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0px 20px;
+        height: 60px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+    }
+    .navigation-bar .logo img {
+        height: 50px;
+    }
+    .search-section #input-nav {
+        display: none;
+    }
+    .search-section button {
+        display: none;
+    }
+    .search-section .voice-search {
+        display: none;
+    }
+}
 
 
 
