@@ -311,7 +311,7 @@ main video and the side bar */
 }
 
 /* The responsive design for Tablet with the maximum width of 820pixels */
-@media only screen and (max-width: 820px){
+@media only screen and (min-width: 768px) and (max-width: 1024px){
     .navigation-bar {
         justify-content: space-between;
         gap: 10px;
@@ -400,7 +400,7 @@ main video and the side bar */
     }
 }
 
-@media only screen and (max-width : 620px){
+@media only screen and (max-width : 767px){
 
     /* The navigation bar codes below */
     .navigation-bar {
@@ -586,7 +586,7 @@ main video and the side bar */
         grid-template-areas: "video music-title";
         grid-template-columns: 35% auto;
         grid-template-rows: 60px;
-        padding: 8px 20px;
+        padding: 5px 10px;
         transition: all 0.3s ease-in-out;
     }
     .side-video .playlist .music:hover{
@@ -598,27 +598,9 @@ main video and the side bar */
         background-size: cover;
         border-radius: 8px;
     }
-    .side-video .playlist .music .video1 {
-        background-image: url(img/dadju.jpeg);
-    }
-    .side-video .playlist .music .video2 {
-        background-image: url(img/fally.jpeg);
-    }
-    .side-video .playlist .music .video3 {
-        background-image: url(img/diamond.jpeg);
-    }
-    .side-video .playlist .music .video4 {
-        background-image: url(img/gims.jpeg);
-    }
-    .side-video .playlist .music .video5 {
-        background-image: url(img/sheebah.jpeg);
-    }
-    .side-video .playlist .music .video6 {
-        background-image: url(img/Wizkid.jpeg);
-    }
     .side-video .playlist .music .music-title {
         font-size: 0.8rem;
-        padding: 8px 10px;
+        padding: 5px 10px;
     }
     .side-video .playlist .music .music-title h2 {
         font-size: 0.8rem;
@@ -630,13 +612,15 @@ main video and the side bar */
     .side-video .buttons-more {
         grid-area: buttons-more;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
+        gap: 20px;
         align-items: center;
+        margin: 80px 0;
     }
     .side-video .buttons-more button{
         border-radius: 18px;
         border: none;
-        padding: 8px 13px;
+        padding: 5px 10px;
         background: rgb(217, 217, 217);
         font-size: 0.8rem;
         color: black;
