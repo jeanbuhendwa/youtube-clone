@@ -431,7 +431,7 @@ main video and the side bar */
         height: 100vh;
         /* width: 100%;  */
         grid-template-columns: auto;
-        grid-template-rows: 60% 40%;
+        grid-template-rows: 52% 48%;
         margin: 0px;
     }
     .main-video {
@@ -541,6 +541,106 @@ main video and the side bar */
     .video-description p{
         font-size: 0.7rem;
         font-weight: 300;
+    }
+
+    /* This styles the playlist */
+    .side-video {
+        grid-area: side-video;
+        display: grid;
+        grid-template-areas: 
+            "playlist-title"
+            "playlist" "buttons-more";
+        grid-template-columns: auto;
+        grid-template-rows: 15% 70% 15%;
+        padding: 10px;
+    }
+    .side-video .playlist-title {
+        background: rgb(238, 238, 238);
+        grid-area: playlist-title;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 15px 15px 0 0;
+    }
+    .side-video .playlist-title .my-playlist h2{
+        font-size: 1rem;
+    }
+    .side-video .playlist-title .my-playlist p{
+        font-size: 0.6rem;
+        font-weight: 300;
+        margin-top: 5px;
+    }
+    .side-video .playlist-title button{
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    
+    .side-video .playlist {
+        grid-area: playlist;
+    }
+    .side-video .playlist .music{
+        display: grid;
+        grid-template-areas: "video music-title";
+        grid-template-columns: 35% auto;
+        grid-template-rows: 60px;
+        padding: 8px 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    .side-video .playlist .music:hover{
+        background: rgb(238, 238, 238);
+        cursor: pointer;
+    }
+    .side-video .playlist .music .video {
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    .side-video .playlist .music .video1 {
+        background-image: url(img/dadju.jpeg);
+    }
+    .side-video .playlist .music .video2 {
+        background-image: url(img/fally.jpeg);
+    }
+    .side-video .playlist .music .video3 {
+        background-image: url(img/diamond.jpeg);
+    }
+    .side-video .playlist .music .video4 {
+        background-image: url(img/gims.jpeg);
+    }
+    .side-video .playlist .music .video5 {
+        background-image: url(img/sheebah.jpeg);
+    }
+    .side-video .playlist .music .video6 {
+        background-image: url(img/Wizkid.jpeg);
+    }
+    .side-video .playlist .music .music-title {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+    .side-video .playlist .music .music-title h2 {
+        font-size: 0.8rem;
+    }
+    .side-video .playlist .music .music-title p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .side-video .buttons-more {
+        grid-area: buttons-more;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .side-video .buttons-more button{
+        border-radius: 18px;
+        border: none;
+        padding: 8px 13px;
+        background: rgb(217, 217, 217);
+        font-size: 0.8rem;
+        color: black;
+        cursor: pointer;
     }
 }
 
