@@ -400,6 +400,7 @@ main video and the side bar */
     }
 }
 
+/* The design for mobile and smartphone size */
 @media only screen and (max-width : 767px){
 
     /* The navigation bar codes below */
@@ -429,7 +430,6 @@ main video and the side bar */
         display: grid;
         grid-template-areas: "main-video" "side-video";
         height: 100vh;
-        /* width: 100%;  */
         grid-template-columns: auto;
         grid-template-rows: 52% 48%;
         margin: 0px;
@@ -631,5 +631,5 @@ main video and the side bar */
 
 
 /* Designed by John IRENGE BUHENDWA
-WEB development Student
+WEB development Student at microverse
 https://github.com/jeanbuhendwa */
